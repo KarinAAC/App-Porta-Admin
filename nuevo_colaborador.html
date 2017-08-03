@@ -10,8 +10,8 @@
     <link rel="icon" href="assets/images/logo.png" type="image/png">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -112,136 +112,226 @@
     <section class="content">
         <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="post-web">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="post-web">
                 <div class="thumbnail">
                   <h2>DATOS DEL TRABAJADOR</h2>
                   <hr>
                   <form data-toggle="validator" role="form">
-                      <div class="form-group">
-                          <label for="inputCode" class="control-label">Código
-                              <input type="text" class="form-control" id="inputCode" placeholder="" required>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputCode" class="control-label">Código
+                                <input type="text" class="form-control" id="inputCode" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="inputName">Nombres</label>
-                          <input type="text" class="form-control" id="inputName" placeholder="" required>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputName">Nombres</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="Lastname">Apellidos</label>
-                          <input type="text" class="form-control" id="inputLastname" placeholder="" required>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Dni">Dni</label>
+                            <input type="text" class="form-control" id="inputDni" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="Dni">Dni</label>
-                          <input type="text" class="form-control" id="inputDni" placeholder="" required>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Position">Cargo</label>
+                            <input type="text" class="form-control" id="inputPosition" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="Position">Cargo</label>
-                          <input type="text" class="form-control" id="inputPosition" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="Date">Fecha de Nacimiento</label>
-                          <div id="sandbox-container">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Date">Fecha de Nacimiento</label>
+                            <div id="sandbox-container">
 
-                              <input type="text" type="text" id="inputDate" class="form-control" />
-                              <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-calendar"></span>
-                              </span>
-                          </div>
+                                <input type="text" type="text" id="inputDate" class="form-control" />
+                                <span class="input-group-addon">
+                                    <i class="material-icons">perm_contact_calendar</i>
+                                </span>
+                            </div>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="phone">Celular / Teléfono</label>
-                          <input type="text" class="form-control" id="inputPhone" placeholder="" required>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Celular / Teléfono</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group text-center">
-                          <button type="submit" class="btn btn-success">Guardar</button>
-                      </div>
+                    </div>
                     </form>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="post-sms">
-                <div class="thumbnail">
-                  <h2>DATOS DE ESPOSA</h2>
-                  <hr>
-                  <form data-toggle="validator" role="form">
-                      <div class="form-group">
-                          <label for="inputCode" class="control-label">Código
-                              <input type="text" class="form-control" id="inputCode" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="inputName">Nombres</label>
-                          <input type="text" class="form-control" id="inputName" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="Lastname">Apellidos</label>
-                          <input type="text" class="form-control" id="inputLastname" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="Dni">Dni</label>
-                          <input type="text" class="form-control" id="inputDni" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="Children">Hijos</label>
-                          <input type="text" class="form-control" id="inputChildren" placeholder="" required>
-                      </div>
-                      <div class="form-group">
-                          <label for="Date">Fecha de Nacimiento</label>
-                          <div id="sandbox-container">
-
-                              <input type="text" type="text" id="inputDate" class="form-control" />
-                              <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-calendar"></span>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          <label for="phone">Celular / Teléfono</label>
-                          <input type="text" class="form-control" id="inputPhone" placeholder="" required>
-                      </div>
-                      <div class="form-group text-center">
-                          <button type="submit" class="btn btn-success">Guardar</button>
-                      </div>
-                    </form>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="post-sms">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="post-sms">
                   <div class="thumbnail">
                   <h2>DATOS DE PADRES</h2>
                   <hr>
                   <form data-toggle="validator" role="form">
-                      <div class="form-group">
-                          <label for="inputCode" class="control-label">Código
-                              <input type="text" class="form-control" id="inputCode" placeholder="" required>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputCode" class="control-label">Código
+                                <input type="text" class="form-control" id="inputCode" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="inputName">Nombres</label>
-                          <input type="text" class="form-control" id="inputName" placeholder="" required>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="inputName">Nombres</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="Lastname">Apellidos</label>
-                          <input type="text" class="form-control" id="inputLastname" placeholder="" required>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Dni">Dni</label>
+                            <input type="text" class="form-control" id="inputDni" placeholder="" required>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="Dni">Dni</label>
-                          <input type="text" class="form-control" id="inputDni" placeholder="" required>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Date">Fecha de Nacimiento</label>
+                            <div id="sandbox-container">
+
+                                <input type="text" type="text" id="inputDate" class="form-control" />
+                                <span class="input-group-addon">
+                                  <i class="material-icons">perm_contact_calendar</i>
+                                </span>
+                            </div>
+                        </div>
                       </div>
-                      <div class="form-group">
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Celular / Teléfono</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="" required>
+                        </div>
+                      </div>
+                    </div>
+                    </form>
+                  </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="post-sms">
+                <div class="thumbnail">
+                  <h2>DATOS DE ESPOSA</h2>
+                  <hr>
+                  <form data-toggle="validator" role="form">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="inputCode" class="control-label">Código
+                                <input type="text" class="form-control" id="inputCode" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="inputName">Nombres</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="Dni">Dni</label>
+                            <input type="text" class="form-control" id="inputDni" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="phone">Celular / Teléfono</label>
+                            <input type="text" class="form-control" id="inputPhone" placeholder="" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Son1">Hijo 1</label>
+                          <input type="text" class="form-control" id="inputSon1" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Sons2">Hijo 2</label>
+                          <input type="text" class="form-control" id="inputSon2" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Sons3">Hijo 3</label>
+                          <input type="text" class="form-control" id="inputSon3" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Sons3">Hijo 4</label>
+                          <input type="text" class="form-control" id="inputSon3" placeholder="" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-group">
                           <label for="Date">Fecha de Nacimiento</label>
                           <div id="sandbox-container">
 
                               <input type="text" type="text" id="inputDate" class="form-control" />
                               <span class="input-group-addon">
-                          <span class="glyphicon glyphicon-calendar"></span>
+                                <i class="material-icons">perm_contact_calendar</i>
                               </span>
                           </div>
+                        </div>
                       </div>
-                      <div class="form-group">
-                          <label for="phone">Celular / Teléfono</label>
-                          <input type="text" class="form-control" id="inputPhone" placeholder="" required>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Date">Fecha de Nacimiento</label>
+                          <div id="sandbox-container">
+
+                              <input type="text" type="text" id="inputDate" class="form-control" />
+                              <span class="input-group-addon">
+                                <i class="material-icons">perm_contact_calendar</i>
+                              </span>
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-group text-center">
-                          <button type="submit" class="btn btn-success">Guardar</button>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Date">Fecha de Nacimiento</label>
+                          <div id="sandbox-container">
+
+                              <input type="text" type="text" id="inputDate" class="form-control" />
+                              <span class="input-group-addon">
+                                <i class="material-icons">perm_contact_calendar</i>
+                              </span>
+                          </div>
+                        </div>
                       </div>
-                    </form>
-                  </div>
+                      <div class="col-md-3">
+                        <div class="form-group">
+                          <label for="Date">Fecha de Nacimiento</label>
+                          <div id="sandbox-container">
+
+                              <input type="text" type="text" id="inputDate" class="form-control" />
+                              <span class="input-group-addon">
+                                <i class="material-icons">perm_contact_calendar</i>
+                              </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary"><i class="material-icons i-material">save</i> Guardar</button>
               </div>
           </div>
         </div>
@@ -260,7 +350,53 @@
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
 
-
 </body>
+<style>
+ div#sandbox-container {
+     display: inline-flex;
+     width: 100%;
+ }
+ span.input-group-addon {
+    padding: 2px 12px;
+    border-top-left-radius: 0px;
+ }
+ span.input-group-addon {
+     float: left;
+ }
+ span.input-group-addon {
+     width: 45px;
+ }
+ label.control-label {
+     width: 100% !important;
+ }
+ h2 {
+     font-size: 25px;
+     color: #3f51b5;
+     margin: 25px 0px 0px;
+ }
+ #login {
+     height: 100%;
+     width: 100%;
+     padding-top: 30px;
+ }
+ .thumbnail {
+    padding: 4px 12px;
+ }
+ .btn-primary {
+   color: #fff;
+   color: white;
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+   padding: 0px 25px 8px;
+   margin: 10px 0 20px 0;
+ }
+ hr {
+    margin-top: 10px;
+ }
+ .i-material {
+  position: relative;
+  top: 5px;
+ }
+ </style>
 
 </html>
