@@ -88,6 +88,6 @@ $("#telefono2").text(json.colaboradores[1].Telefono);
     if(us.value == (json.usuarios[0].users) && ps.value == (json.usuarios[0].contraseña) ){
       window.location.href = "dashboard.html"
     }else {
-      alert("error");
+      alert("ERROR INGRESAR CORRECTAMENTE SUS DATOS");
     }
   });
