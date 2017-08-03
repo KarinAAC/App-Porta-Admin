@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#registrar').click(function(){
-    window.location.href = "http://stackoverflow.com";
+  $('#Registrar').click(function(){
+    window.location.href = "index.html";
   });
 });
