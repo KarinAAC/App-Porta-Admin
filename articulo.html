@@ -64,7 +64,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><img src="assets/images/user.png" width="48" height="48" alt="User" /> </li>
-                    <li><a>Admin</a></li>
+                    <li><a href="login.html">Admin</a></li>
                     <li><a href=""><i>-></i></a></li>
                 </ul>
             </div>
@@ -94,26 +94,6 @@
                             <i class="material-icons">description</i>
                             <span>Artículos</span>
                         </a>
-                    </li>
-                    <li>
-                        <a href="reporte.html" class="menu-toggle">
-                            <i class="material-icons">assessment</i>
-                            <span>Reportes</span>
-                        </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="reporte.html" class="waves-effect waves-block">
-                                    <span>reporte1</span>
-                                </a>
-
-                            </li>
-                            <li>
-                                <a href="reporte.html" class="waves-effect waves-block">
-                                    <span>reporte2</span>
-                                </a>
-
-                            </li>
-                        </ul>
                     </li>
                 </ul>
             </div>
@@ -149,11 +129,15 @@
                                 <div class="form-group">
                                     <label for="inputTitulo" class="control-label">Categoría:</label>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Seleccione <span class="caret"></span></button>
+                                        <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Seleccione <span class="caret"></span></button>
                                         <ul class="dropdown-menu">
                                             <li><a href="#">Eventos</a></li>
                                             <li><a href="#">Mi AESA</a></li>
-                                        </ul>
+                                        </ul>-->
+                                        <select id="postType">
+                                          <option value="publico">Eventos</option>
+                                          <option value="amigos">Mi AESA</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -162,12 +146,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="comment">Contenido:</label>
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    <textarea class="form-control" rows="5" id="postText"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Aduntar imagen:</label>
                                     <input id="input-4" name="input4[]" type="file" multiple class="file-loading">
-                                </div>                                
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -190,18 +174,28 @@
                                     <div class="radio">
                                         <label><input type="checkbox" name="underwear" required> Padres</label>
                                     </div>
-                                </div>                            
+                                </div>
                         </div>
                     </div>
                     </form>
                 </div>
             </div>
+            <!--<select id="postType">
+              <option value="publico">Publico</option>
+              <option value="amigos">Amigos</option>
+            </select>-->
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <button class="btn btn-primary"><i class="material-icons">save</i> Guardar</button>
-                    <button class="btn btn-primary"><i class="material-icons">cancel</i> Cancelar</button>
-                    <button class="btn btn-primary"><i class="material-icons">cancel</i> Cancelar</button>
+                    <button class="btn btn-primary" id=publicar><i class="material-icons">save</i> Guardar</button>
+                    <button class="btn btn-primary" id="editar"><i class="material-icons">cancel</i>Editar</button>
+                    <button class="btn btn-primary" id="eliminar"><i class="material-icons">cancel</i> Cancelar</button>
                 </div>
+            </div>
+            <div class="panel panel-default" id="publicaciones">
+              <div class="panel-heading">Publicaciones</div>
+              <div class="panel-body">
+              <div id="posts"></div>
+              </div>
             </div>
         </div>
 
@@ -221,6 +215,9 @@
 
     <script src="js/login.js" charset="utf-8"></script>
     <script src="js/api/data.js" charset="utf-8"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/app.js"></script>
 
 
 </body>

@@ -1,6 +1,6 @@
 window.addEventListener('load',function() {
 
-  var ingresar = document.getElementById('ingresar');
+  var ingresar = document.getElementById('registrar');
   ingresar.addEventListener('click',function() {
 
     var UsuarioInput = document.getElementById('inputUsuario');

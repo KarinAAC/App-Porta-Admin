@@ -79,6 +79,12 @@
   align-items: flex-end;
   justify-content: flex-end; }
 
+/**/
+#publicaciones{
+  margin: 20px;
+  height: 400px;
+}
+
 /* Navbar ====================================== */
 .navbar {
   font-family: "Roboto", sans-serif;
