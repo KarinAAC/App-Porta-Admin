@@ -10,7 +10,7 @@ var client = require('twilio')(accountSid, authToken);
 client.messages.create({
     to: "+51982368392",
     from: "+13233101638",
-    body: "Hola, ven a aprender a bordar con nosotros el 8 de Agosto. ¡Te esperamos!, más información https://analucia20.github.io/aporta-project/consulta-dental.html"
+    body: "Hola, ven a aprender a bordar con nosotros el 8 de Agosto.¡Te esperamos!, más información https://analucia20.github.io/aporta-project/index.html"
 }, function(err) {
     console.log(err);
 });

@@ -91,3 +91,7 @@ $("#telefono2").text(json.colaboradores[1].Telefono);
       alert("ERROR INGRESAR CORRECTAMENTE SUS DATOS");
     }
   });
+
+$("#eliminar").in('click', function({
+  alert($("#inputTitulo").val());
+});
