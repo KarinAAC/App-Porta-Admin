@@ -1,4 +1,8 @@
 var json={
+          "usuarios":[{
+                      "users": "ADMIN",
+                      "contraseña":"1234"
+          }],
           "colaboradores":[{"id"                 : "SR001",
                             "Nombres"            : "Juan Carlos",
                             "Apellidos"          : "Gamarra Gonzales",
@@ -75,4 +79,15 @@ $("#dni2").text(json.colaboradores[1].Dni);
 $("#cargo2").text(json.colaboradores[1].Cargo);
 $("#fecha2").text(json.colaboradores[1].Fecha);
 $("#telefono2").text(json.colaboradores[1].Telefono);
-/*json.padres[0].padre[1].id*/
+
+  var boton = document.getElementById('registrar');
+  var us = document.getElementById("inputUsuario");
+  var ps=document.getElementById("inputContraseña");
+
+  boton.addEventListener('click',function() {
+    if(us.value == (json.usuarios[0].users) && ps.value == (json.usuarios[0].contraseña) ){
+      window.location.href = "dashboard.html"
+    }else {
+      alert("error");
+    }
+  });
